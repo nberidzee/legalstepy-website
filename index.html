@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1657f4" />
+    <meta
+      name="description"
+      content="LegalStepy brings contract creation, collaboration, approvals, signatures and deadlines into one controlled workspace."
+    />
+    <meta property="og:title" content="LegalStepy — Contract management, finally under control" />
+    <meta
+      property="og:description"
+      content="Create, collaborate, approve, sign and track every contract in one controlled workspace."
+    />
+    <meta property="og:type" content="website" />
+    <title>LegalStepy — Contract management, finally under control</title>
+    <link rel="icon" type="image/svg+xml" href="assets/brand/legalstepy-mark.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-header>
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="LegalStepy home">
+          <img src="assets/brand/legalstepy-wordmark.svg" alt="LegalStepy" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-panel" id="nav-panel">
+          <div class="nav-links">
+            <a href="#product" data-i18n="nav.product">Product</a>
+            <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
+            <a href="#features" data-i18n="nav.features">Features</a>
+            <a href="#team" data-i18n="nav.team">Team</a>
+          </div>
+          <div class="nav-actions">
+            <button class="language-switch" type="button" aria-label="Switch language">
+              <span data-lang-label>KA</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5" /></svg>
+            </button>
+            <a class="button button-small" href="https://calendly.com/legalstepy-info/meeting-with-legastepy-team" target="_blank" rel="noreferrer" data-i18n="nav.demo">Book a demo</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              <span data-i18n="hero.eyebrow">AI-powered contract lifecycle management</span>
+            </div>
+            <h1 data-i18n="hero.title">Every contract.<br /><span>One clear process.</span></h1>
+            <p class="hero-lead" data-i18n="hero.lead">
+              Create, collaborate, approve, sign and track contracts in one controlled workspace — without the email chaos.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://calendly.com/legalstepy-info/meeting-with-legastepy-team" target="_blank" rel="noreferrer">
+                <span data-i18n="hero.cta">Book a demo</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+              <a class="button button-ghost" href="#product">
+                <span class="play-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7l7 5-7 5V7z" /></svg></span>
+                <span data-i18n="hero.secondary">See how it works</span>
+              </a>
+            </div>
+            <div class="hero-note">
+              <div class="avatar-stack" aria-hidden="true"><span>L</span><span>F</span><span>P</span></div>
+              <span data-i18n="hero.note">Built for legal, finance, procurement and operations teams</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="LegalStepy product workflow illustration">
+            <div class="floating-chip chip-approved">
+              <span class="chip-icon success"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6" /></svg></span>
+              <span><b data-i18n="hero.approved">Approved</b><small data-i18n="hero.approvedSub">Legal review complete</small></span>
+            </div>
+            <div class="floating-chip chip-reminder">
+              <span class="chip-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v5l3 2M20 12a8 8 0 11-16 0 8 8 0 0116 0z" /></svg></span>
+              <span><b data-i18n="hero.reminder">Renewal reminder</b><small data-i18n="hero.reminderSub">30 days remaining</small></span>
+            </div>
+            <div class="app-window">
+              <div class="app-sidebar">
+                <img src="assets/brand/legalstepy-mark.svg" alt="" />
+                <span class="side-item active"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg></span>
+                <span class="side-item"><svg viewBox="0 0 24 24"><path d="M4 7h6l2 2h8v10H4z" /></svg></span>
+                <span class="side-item"><svg viewBox="0 0 24 24"><path d="M8 4h8v4H8zM6 8h12v12H6z" /></svg></span>
+                <span class="side-item"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" /></svg></span>
+              </div>
+              <div class="app-main">
+                <div class="app-topbar">
+                  <div><small data-i18n="mock.workspace">Workspace</small><strong data-i18n="mock.contracts">Contracts</strong></div>
+                  <div class="app-user">NB</div>
+                </div>
+                <div class="app-stats">
+                  <div><span data-i18n="mock.active">Active</span><strong>48</strong><small class="trend">+6.2%</small></div>
+                  <div><span data-i18n="mock.approval">In approval</span><strong>12</strong><small>4 today</small></div>
+                  <div><span data-i18n="mock.renewals">Renewals</span><strong>07</strong><small>Next 30 days</small></div>
+                </div>
+                <div class="contract-card">
+                  <div class="contract-head">
+                    <div><small data-i18n="mock.current">CURRENT WORKFLOW</small><strong data-i18n="mock.service">Service Agreement</strong></div>
+                    <span class="status-pill" data-i18n="mock.review">In review</span>
+                  </div>
+                  <div class="workflow" aria-hidden="true">
+                    <div class="workflow-step done"><span>1</span><small>Create</small></div>
+                    <i></i>
+                    <div class="workflow-step done"><span>2</span><small>Review</small></div>
+                    <i></i>
+                    <div class="workflow-step current"><span>3</span><small>Approve</small></div>
+                    <i></i>
+                    <div class="workflow-step"><span>4</span><small>Sign</small></div>
+                  </div>
+                  <div class="review-row">
+                    <div class="reviewer"><span>LS</span><p><b data-i18n="mock.legal">Legal team</b><small data-i18n="mock.completed">Review completed</small></p></div>
+                    <span class="review-check"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" /></svg></span>
+                  </div>
+                  <div class="review-row">
+                    <div class="reviewer"><span>FM</span><p><b data-i18n="mock.finance">Finance manager</b><small data-i18n="mock.waiting">Waiting for approval</small></p></div>
+                    <button type="button" tabindex="-1" data-i18n="mock.approve">Approve</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="visual-caption"><span></span><span data-i18n="mock.caption">Illustrative product preview</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="role-strip" aria-label="Teams">
+        <div class="shell role-strip-inner">
+          <span data-i18n="strip.label">One workspace for</span>
+          <div class="role-list"><span data-i18n="strip.legal">Legal</span><i></i><span data-i18n="strip.procurement">Procurement</span><i></i><span data-i18n="strip.finance">Finance</span><i></i><span>HR</span><i></i><span data-i18n="strip.operations">Operations</span></div>
+        </div>
+      </section>
+
+      <section class="section problem-section" id="product">
+        <div class="shell">
+          <div class="section-heading centered reveal">
+            <span class="section-kicker" data-i18n="problem.kicker">THE PROBLEM</span>
+            <h2 data-i18n="problem.title">Contract work shouldn’t feel like detective work.</h2>
+            <p data-i18n="problem.lead">When contracts live across inboxes, folders and spreadsheets, visibility disappears — and risk quietly grows.</p>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card reveal"><span class="problem-number">01</span><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" /></svg></div><h3 data-i18n="problem.emailTitle">Endless email threads</h3><p data-i18n="problem.emailText">Feedback, attachments and decisions get buried in long conversations.</p></article>
+            <article class="problem-card reveal"><span class="problem-number">02</span><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7zM15 3v5h5M4 7v13h11" /></svg></div><h3 data-i18n="problem.versionTitle">Version confusion</h3><p data-i18n="problem.versionText">Nobody is fully sure which document is current or who changed what.</p></article>
+            <article class="problem-card reveal"><span class="problem-number">03</span><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 8v5l3 2M20 12a8 8 0 11-16 0 8 8 0 0116 0z" /></svg></div><h3 data-i18n="problem.deadlineTitle">Missed deadlines</h3><p data-i18n="problem.deadlineText">Renewals and obligations surface only when they become urgent.</p></article>
+            <article class="problem-card reveal"><span class="problem-number">04</span><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3 8-8 10-5-2-8-5-8-10V7zM9 12l2 2 4-4" /></svg></div><h3 data-i18n="problem.controlTitle">Limited control</h3><p data-i18n="problem.controlText">Approvals, access and accountability remain difficult to track.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lifecycle-section" id="solutions">
+        <div class="shell">
+          <div class="section-heading split reveal">
+            <div><span class="section-kicker" data-i18n="lifecycle.kicker">ONE CONNECTED LIFECYCLE</span><h2 data-i18n="lifecycle.title">From first draft to final deadline.</h2></div>
+            <p data-i18n="lifecycle.lead">LegalStepy keeps every step, person and decision connected — so work moves forward without losing context.</p>
+          </div>
+          <div class="lifecycle-flow reveal">
+            <article class="lifecycle-card active"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM15 3v5h5M8 12h8M8 16h6" /></svg></span><small>01</small><h3 data-i18n="lifecycle.create">Create</h3><p data-i18n="lifecycle.createText">Build from approved templates or generate a new contract with AI.</p></article>
+            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
+            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M4 5h16v14H4z" /></svg></span><small>02</small><h3 data-i18n="lifecycle.collaborate">Collaborate</h3><p data-i18n="lifecycle.collaborateText">Comment, edit and compare versions in one shared workspace.</p></article>
+            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
+            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M7 12l3 3 7-7M12 3l8 4v5c0 5-3 8-8 10-5-2-8-5-8-10V7z" /></svg></span><small>03</small><h3 data-i18n="lifecycle.approve">Approve</h3><p data-i18n="lifecycle.approveText">Route contracts through the right people and company rules.</p></article>
+            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
+            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 18c4-1 5-5 8-8l2 2c-3 3-4 7-8 8H4zM13 9l3-3 2 2-3 3" /></svg></span><small>04</small><h3 data-i18n="lifecycle.sign">Sign</h3><p data-i18n="lifecycle.signText">Send for electronic signature without leaving the process.</p></article>
+            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
+            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" /></svg></span><small>05</small><h3 data-i18n="lifecycle.track">Track</h3><p data-i18n="lifecycle.trackText">Stay ahead of renewals, obligations and performance.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features-section" id="features">
+        <div class="shell">
+          <div class="section-heading centered reveal">
+            <span class="section-kicker" data-i18n="features.kicker">EVERYTHING IN ONE PLACE</span>
+            <h2 data-i18n="features.title">Control the process, not just the document.</h2>
+            <p data-i18n="features.lead">A complete workspace designed around how contracts actually move through a business.</p>
+          </div>
+          <div class="bento-grid">
+            <article class="bento-card bento-wide repository-card reveal">
+              <div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M3 7h7l2 2h9v11H3z" /></svg></span><h3 data-i18n="features.repository">Smart repository</h3><p data-i18n="features.repositoryText">One searchable source of truth for every contract, version and attachment.</p></div>
+              <div class="mini-repository" aria-hidden="true"><div class="mini-search">⌕ <span>Search contracts...</span></div><div class="mini-file"><span class="file-type">PDF</span><p><b>Master Service Agreement</b><small>Updated today</small></p><i class="file-status">Active</i></div><div class="mini-file"><span class="file-type blue">DOC</span><p><b>Supplier Agreement</b><small>Updated yesterday</small></p><i class="file-status review">Review</i></div></div>
+            </article>
+            <article class="bento-card ai-card reveal"><div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2l1.5 5.5L19 9l-5.5 1.5L12 16l-1.5-5.5L5 9l5.5-1.5zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z" /></svg></span><h3 data-i18n="features.ai">AI assistant</h3><p data-i18n="features.aiText">Draft, summarize and surface key terms in seconds.</p></div><div class="ai-spark" aria-hidden="true"><span></span><span></span><span></span></div></article>
+            <article class="bento-card reveal"><div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 118 0v2M6 13h12v8H6zM12 16v2" /></svg></span><h3 data-i18n="features.access">Roles & permissions</h3><p data-i18n="features.accessText">Give every person exactly the access they need.</p></div><div class="permission-list" aria-hidden="true"><span><i>LS</i> Legal admin <b>Full access</b></span><span><i>FM</i> Finance <b>Approve</b></span></div></article>
+            <article class="bento-card reveal"><div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM8 10h8M8 14h5" /></svg></span><h3 data-i18n="features.templates">Smart templates</h3><p data-i18n="features.templatesText">Turn company standards into faster, safer drafting.</p></div><div class="template-stack" aria-hidden="true"><span></span><span></span><span><i></i><i></i><i></i></span></div></article>
+            <article class="bento-card bento-wide analytics-card reveal"><div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" /></svg></span><h3 data-i18n="features.analytics">Analytics & insights</h3><p data-i18n="features.analyticsText">See cycle times, workload, bottlenecks and upcoming obligations at a glance.</p></div><div class="mini-chart" aria-hidden="true"><div class="chart-labels"><span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span></div><svg viewBox="0 0 500 160" preserveAspectRatio="none"><defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1657f4" stop-opacity=".28"/><stop offset="1" stop-color="#1657f4" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0 140 C60 115 70 120 120 95 S200 105 245 70 S320 90 370 44 S445 55 500 20 L500 160 L0 160Z"/><path class="line" d="M0 140 C60 115 70 120 120 95 S200 105 245 70 S320 90 370 44 S445 55 500 20"/><circle cx="500" cy="20" r="5"/></svg></div></article>
+            <article class="bento-card reveal"><div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 7v5l3 2M20 12a8 8 0 11-16 0 8 8 0 0116 0z" /></svg></span><h3 data-i18n="features.reminders">Events & reminders</h3><p data-i18n="features.remindersText">Never discover a renewal or obligation too late.</p></div><div class="date-card" aria-hidden="true"><b>28</b><span>SEP</span><p>Renewal notice<small>Supplier agreement</small></p></div></article>
+            <article class="bento-card reveal"><div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" /></svg></span><h3 data-i18n="features.audit">Complete audit trail</h3><p data-i18n="features.auditText">A reliable record of every change, action and decision.</p></div><div class="audit-dots" aria-hidden="true"><span></span><i></i><span></span><i></i><span></span></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section teams-section">
+        <div class="shell teams-grid">
+          <div class="teams-copy reveal">
+            <span class="section-kicker" data-i18n="teams.kicker">BUILT FOR THE WHOLE BUSINESS</span>
+            <h2 data-i18n="teams.title">Everyone sees what they need. Nothing gets lost.</h2>
+            <p data-i18n="teams.lead">LegalStepy connects the teams involved in contract work while keeping responsibilities and access clear.</p>
+            <div class="team-tabs" role="tablist" aria-label="Teams">
+              <button class="team-tab active" role="tab" aria-selected="true" data-role="legal" data-i18n="tabs.legal">Legal</button>
+              <button class="team-tab" role="tab" aria-selected="false" data-role="management" data-i18n="tabs.management">Management</button>
+              <button class="team-tab" role="tab" aria-selected="false" data-role="procurement" data-i18n="tabs.procurement">Procurement</button>
+              <button class="team-tab" role="tab" aria-selected="false" data-role="finance" data-i18n="tabs.finance">Finance</button>
+              <button class="team-tab" role="tab" aria-selected="false" data-role="hr">HR</button>
+            </div>
+          </div>
+          <div class="role-panel reveal" data-role-panel>
+            <div class="role-panel-top"><span class="role-panel-icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3 8-8 10-5-2-8-5-8-10V7z" /></svg></span><span class="role-badge" data-role-badge>LEGAL TEAM</span></div>
+            <h3 data-role-title>Move contracts forward without losing control.</h3>
+            <p data-role-text>Standardize drafting, manage reviews and keep every version, comment and approval connected.</p>
+            <ul data-role-list><li>Approved templates and clause control</li><li>Clear internal and external collaboration</li><li>Complete version history and audit trail</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ai-section">
+        <div class="shell ai-layout">
+          <div class="ai-copy reveal">
+            <span class="dark-kicker"><svg viewBox="0 0 24 24"><path d="M12 2l1.5 5.5L19 9l-5.5 1.5L12 16l-1.5-5.5L5 9l5.5-1.5z" /></svg><span data-i18n="ai.kicker">LEGALSTEPY AI</span></span>
+            <h2 data-i18n="ai.title">Ask your contracts.<br />Get clear answers.</h2>
+            <p data-i18n="ai.lead">Turn complex documents into actionable information. LegalStepy AI helps your team understand, draft and act faster.</p>
+            <ul class="check-list"><li data-i18n="ai.point1">Summarize long agreements</li><li data-i18n="ai.point2">Find clauses, obligations and risks</li><li data-i18n="ai.point3">Generate contracts from company-approved rules</li></ul>
+          </div>
+          <div class="ai-demo reveal">
+            <div class="ai-demo-head"><span class="ai-logo"><img src="assets/brand/legalstepy-mark.svg" alt="" /></span><p><b>LegalStepy AI</b><small data-i18n="ai.online">Online · Ready to help</small></p><span class="online-dot"></span></div>
+            <div class="message user-message" data-i18n="ai.question">What are the renewal terms in this agreement?</div>
+            <div class="message ai-message"><span class="tiny-logo"><img src="assets/brand/legalstepy-mark.svg" alt="" /></span><div><p data-i18n="ai.answer">The agreement renews automatically for 12 months unless either party gives written notice at least 30 days before the renewal date.</p><div class="answer-meta"><span data-i18n="ai.source">Source: Section 8.2</span><button type="button" tabindex="-1" data-i18n="ai.open">Open clause</button></div></div></div>
+            <div class="ai-input"><span data-i18n="ai.placeholder">Ask anything about this contract...</span><button type="button" tabindex="-1"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section control-section">
+        <div class="shell control-grid">
+          <div class="control-visual reveal" aria-hidden="true">
+            <div class="control-orbit orbit-one"></div><div class="control-orbit orbit-two"></div>
+            <div class="control-core"><img src="assets/brand/legalstepy-mark.svg" alt="" /></div>
+            <span class="control-node node-one"><svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 118 0v2M6 13h12v8H6z" /></svg></span>
+            <span class="control-node node-two"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" /></svg></span>
+            <span class="control-node node-three"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 9h8M8 13h5" /></svg></span>
+            <span class="control-node node-four"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3 8-8 10-5-2-8-5-8-10V7z" /></svg></span>
+          </div>
+          <div class="control-copy reveal"><span class="section-kicker" data-i18n="control.kicker">CONTROL BY DESIGN</span><h2 data-i18n="control.title">Your process. Your rules. Full visibility.</h2><p data-i18n="control.lead">Build contract workflows around the way your company operates — with clear ownership, controlled access and a reliable record at every step.</p><div class="control-points"><div><span><svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 118 0v2M6 13h12v8H6z" /></svg></span><p><b data-i18n="control.access">Role-based access</b><small data-i18n="control.accessText">Keep sensitive information visible only to the right people.</small></p></div><div><span><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg></span><p><b data-i18n="control.audit">Audit-ready history</b><small data-i18n="control.auditText">See who did what, when and why — without searching.</small></p></div><div><span><svg viewBox="0 0 24 24"><path d="M6 4h12v5H6zM4 15h6v5H4zM14 15h6v5h-6zM12 9v3M7 12h10v3" /></svg></span><p><b data-i18n="control.workflow">Custom approval workflows</b><small data-i18n="control.workflowText">Turn company policies into repeatable digital processes.</small></p></div></div></div>
+        </div>
+      </section>
+
+      <section class="section how-section">
+        <div class="shell">
+          <div class="section-heading centered reveal"><span class="section-kicker" data-i18n="how.kicker">START SIMPLY</span><h2 data-i18n="how.title">A clearer contract process in three steps.</h2></div>
+          <div class="how-grid">
+            <article class="how-card reveal"><span>01</span><div class="how-icon"><svg viewBox="0 0 24 24"><path d="M12 3v12M8 7l4-4 4 4M5 14v6h14v-6" /></svg></div><h3 data-i18n="how.step1">Bring your contracts</h3><p data-i18n="how.step1Text">Move active agreements and templates into one structured repository.</p></article>
+            <article class="how-card reveal"><span>02</span><div class="how-icon"><svg viewBox="0 0 24 24"><path d="M6 4h12v5H6zM4 15h6v5H4zM14 15h6v5h-6zM12 9v3M7 12h10v3" /></svg></div><h3 data-i18n="how.step2">Set your workflow</h3><p data-i18n="how.step2Text">Define roles, approvals, templates and rules around your business.</p></article>
+            <article class="how-card reveal"><span>03</span><div class="how-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" /></svg></div><h3 data-i18n="how.step3">See everything clearly</h3><p data-i18n="how.step3Text">Track every contract, decision, deadline and result from one place.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section" id="team">
+        <div class="shell">
+          <div class="section-heading centered reveal"><span class="section-kicker" data-i18n="team.kicker">MEET THE FOUNDERS</span><h2 data-i18n="team.title">The people building LegalStepy.</h2><p data-i18n="team.lead">A team combining legal, operational, business and technology expertise.</p></div>
+          <div class="founders-grid">
+            <article class="founder-card reveal"><div class="founder-photo"><img src="assets/team/luka-shakhkulashvili.webp" alt="Luka Shakhkulashvili" loading="lazy" width="900" height="900" /></div><div class="founder-info"><div><h3 data-i18n="team.lukaName">Luka Shakhkulashvili</h3><p data-i18n="team.luka">Co-Founder & CEO</p></div><a href="https://www.linkedin.com/in/luka-shakhkulashvili/" target="_blank" rel="noreferrer" aria-label="Luka Shakhkulashvili on LinkedIn"><svg viewBox="0 0 24 24"><path d="M6 8v10M6 5v.01M10 18v-6c0-2 4-3 4 0v6M10 9v9M3 3h18v18H3z" /></svg></a></div></article>
+            <article class="founder-card reveal"><div class="founder-photo"><img src="assets/team/noe-beridze.webp" alt="Noe Beridze" loading="lazy" width="900" height="900" /></div><div class="founder-info"><div><h3 data-i18n="team.noeName">Noe Beridze</h3><p data-i18n="team.noe">Co-Founder & COO</p></div><a href="https://www.linkedin.com/in/noe-beridze/" target="_blank" rel="noreferrer" aria-label="Noe Beridze on LinkedIn"><svg viewBox="0 0 24 24"><path d="M6 8v10M6 5v.01M10 18v-6c0-2 4-3 4 0v6M10 9v9M3 3h18v18H3z" /></svg></a></div></article>
+            <article class="founder-card reveal"><div class="founder-photo"><img src="assets/team/sophie-bakhbakhashvili.webp" alt="Sophie Bakhbakhashvili" loading="lazy" width="900" height="900" /></div><div class="founder-info"><div><h3 data-i18n="team.sophieName">Sophie Bakhbakhashvili</h3><p data-i18n="team.sophie">Co-Founder & CLO</p></div><a href="https://www.linkedin.com/in/sophie-bakhbakhashvili-a24b85240/" target="_blank" rel="noreferrer" aria-label="Sophie Bakhbakhashvili on LinkedIn"><svg viewBox="0 0 24 24"><path d="M6 8v10M6 5v.01M10 18v-6c0-2 4-3 4 0v6M10 9v9M3 3h18v18H3z" /></svg></a></div></article>
+            <article class="founder-card reveal"><div class="founder-photo"><img src="assets/team/saba-gobiani.webp" alt="Saba Gobiani" loading="lazy" width="900" height="900" /></div><div class="founder-info"><div><h3 data-i18n="team.sabaName">Saba Gobiani</h3><p data-i18n="team.saba">Co-Founder & CTO</p></div><a href="https://www.linkedin.com/in/saba-gobiani-08b261231/" target="_blank" rel="noreferrer" aria-label="Saba Gobiani on LinkedIn"><svg viewBox="0 0 24 24"><path d="M6 8v10M6 5v.01M10 18v-6c0-2 4-3 4 0v6M10 9v9M3 3h18v18H3z" /></svg></a></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section demo-section" id="contact">
+        <div class="shell demo-shell">
+          <div class="demo-copy reveal"><span class="light-kicker" data-i18n="demo.kicker">LET’S TALK CONTRACTS</span><h2 data-i18n="demo.title">Ready to bring every contract under control?</h2><p data-i18n="demo.lead">Book a personal walkthrough or tell us what your team needs. We’ll show you how LegalStepy can fit your process.</p><a class="button button-white" href="https://calendly.com/legalstepy-info/meeting-with-legastepy-team" target="_blank" rel="noreferrer"><span data-i18n="demo.calendar">Choose a time on Calendly</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a><div class="direct-contact"><span data-i18n="demo.or">Or contact us directly</span><a href="mailto:info@legalstepy.com">info@legalstepy.com</a><a href="https://wa.me/995579229296" target="_blank" rel="noreferrer">+995 579 22 92 96</a></div></div>
+          <form class="demo-form reveal" action="https://formsubmit.co/info@legalstepy.com" method="POST">
+            <input type="hidden" name="_subject" value="New LegalStepy demo request" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="form-row"><label><span data-i18n="form.name">Name and surname</span><input name="name" type="text" autocomplete="name" required data-i18n-placeholder="form.namePlaceholder" placeholder="Your name" /></label><label><span data-i18n="form.email">Work email</span><input name="email" type="email" autocomplete="email" required placeholder="name@company.com" /></label></div>
+            <div class="form-row"><label><span data-i18n="form.company">Company</span><input name="company" type="text" autocomplete="organization" required data-i18n-placeholder="form.companyPlaceholder" placeholder="Company name" /></label><label><span data-i18n="form.role">Your role</span><input name="role" type="text" autocomplete="organization-title" data-i18n-placeholder="form.rolePlaceholder" placeholder="Legal, Finance, CEO..." /></label></div>
+            <label><span data-i18n="form.message">What would you like to improve?</span><textarea name="message" rows="4" data-i18n-placeholder="form.messagePlaceholder" placeholder="Tell us briefly about your contract process"></textarea></label>
+            <label class="consent"><input type="checkbox" required /><span data-i18n="form.consent">I agree to be contacted about my request.</span></label>
+            <button class="button button-primary form-submit" type="submit"><span data-i18n="form.submit">Request a demo</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <a class="whatsapp-fab" href="https://wa.me/995579229296?text=Hello%2C%20I%E2%80%99m%20interested%20in%20LegalStepy%20and%20would%20like%20to%20learn%20more." target="_blank" rel="noreferrer" aria-label="Contact LegalStepy on WhatsApp" data-whatsapp>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4a11 11 0 00-9.5 16.5L5 27l6.7-1.5A11 11 0 1016 4zm5.6 16.2c-.2.7-1.3 1.3-2 1.4-.5.1-1.2.2-3.8-.9-3.2-1.3-5.2-4.6-5.4-4.8-.2-.2-1.3-1.7-1.3-3.3 0-1.6.8-2.4 1.1-2.7.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6l1 2.5c.1.2.1.5 0 .7l-.4.6-.6.7c-.2.2-.4.4-.2.8.2.4.8 1.3 1.8 2.1 1.2 1.1 2.3 1.5 2.7 1.7.3.2.6.1.8-.1l1-1.2c.2-.3.5-.3.8-.2l2.3 1.1c.3.2.6.2.7.4.1.1.1.7 0 1.2z" /></svg>
+    </a>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-brand"><img src="assets/brand/legalstepy-wordmark.svg" alt="LegalStepy" /><p data-i18n="footer.copy">One controlled workspace for every contract, decision and deadline.</p></div>
+        <div class="footer-links"><div><h3 data-i18n="footer.product">Product</h3><a href="#product" data-i18n="nav.product">Product</a><a href="#features" data-i18n="nav.features">Features</a><a href="#solutions" data-i18n="nav.solutions">Solutions</a></div><div><h3 data-i18n="footer.company">Company</h3><a href="#team" data-i18n="nav.team">Team</a><a href="#contact" data-i18n="footer.contact">Contact</a><a href="https://calendly.com/legalstepy-info/meeting-with-legastepy-team" target="_blank" rel="noreferrer" data-i18n="nav.demo">Book a demo</a></div><div><h3 data-i18n="footer.follow">Follow</h3><a href="https://www.linkedin.com/company/legalstepy/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.facebook.com/profile.php?id=61558920820719" target="_blank" rel="noreferrer">Facebook</a><a href="https://www.instagram.com/legalstepy/" target="_blank" rel="noreferrer">Instagram</a></div></div>
+      </div>
+      <div class="shell footer-bottom"><span>© 2026 LegalStepy. <span data-i18n="footer.rights">All rights reserved.</span></span><a href="mailto:info@legalstepy.com">info@legalstepy.com</a></div>
+    </footer>
+  </body>
+</html>
