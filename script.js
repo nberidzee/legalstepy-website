@@ -7,12 +7,13 @@ const translations = {
     nav: { product: "Product", solutions: "Solutions", features: "Features", team: "Team", demo: "Book a demo" },
     hero: {
       eyebrow: "AI-powered contract lifecycle management",
-      title: "Every contract.<br /><span>One clear process.</span>",
+      title: "Every contract.<br /><span>One controlled workspace.</span>",
       lead: "Create, collaborate, approve, sign and track contracts in one controlled workspace — without the email chaos.",
-      cta: "Book a demo", secondary: "See how it works",
-      note: "Built for legal, finance, procurement and operations teams",
+      cta: "Book a demo", secondary: "Explore the platform",
+      note: "Built for legal, procurement, finance and HR teams",
       approved: "Approved", approvedSub: "Legal review complete",
       reminder: "Renewal reminder", reminderSub: "30 days remaining",
+      ask: "Ask LegalStepy", askSub: "Get answers from your contracts.",
     },
     mock: {
       workspace: "Workspace", contracts: "Contracts", active: "Active", approval: "In approval", renewals: "Renewals",
@@ -102,12 +103,13 @@ const translations = {
     nav: { product: "პროდუქტი", solutions: "გადაწყვეტილებები", features: "ფუნქციები", team: "გუნდი", demo: "დაჯავშნე დემო" },
     hero: {
       eyebrow: "AI-ზე დაფუძნებული ხელშეკრულებების მართვა",
-      title: "ყველა ხელშეკრულება.<br /><span>ერთი გამართული პროცესი.</span>",
+      title: "ყველა ხელშეკრულება.<br /><span>ერთი კონტროლირებადი სივრცე.</span>",
       lead: "შექმენით, შეათანხმეთ, დაამტკიცეთ, მოაწერეთ ხელი და აკონტროლეთ ხელშეკრულებები ერთ სივრცეში — ელფოსტის ქაოსის გარეშე.",
-      cta: "დაჯავშნე დემო", secondary: "ნახე როგორ მუშაობს",
-      note: "შექმნილია იურიდიული, ფინანსური, შესყიდვებისა და საოპერაციო გუნდებისთვის",
+      cta: "დაჯავშნე დემო", secondary: "დაათვალიერე პლატფორმა",
+      note: "შექმნილია იურიდიული, შესყიდვების, ფინანსური და HR გუნდებისთვის",
       approved: "დამტკიცებულია", approvedSub: "იურიდიული შემოწმება დასრულდა",
       reminder: "განახლების შეხსენება", reminderSub: "დარჩენილია 30 დღე",
+      ask: "ჰკითხე LegalStepy-ს", askSub: "მიიღე პასუხები ხელშეკრულებებიდან.",
     },
     mock: {
       workspace: "სამუშაო სივრცე", contracts: "ხელშეკრულებები", active: "აქტიური", approval: "დამტკიცებაში", renewals: "განახლებები",
