@@ -96,7 +96,7 @@ html[lang="ka"] .hero h1 { font-size: clamp(2.7rem, 5.1vw, 4.35rem); line-height
 .stage-block-two { width: 112px; height: 350px; right: -24px; top: 245px; border-radius: 24px; }
 .hero-render { min-height: 620px; justify-content: flex-start; }
 .hero-render::before, .hero-render::after { display: none; }
-.hero-render > img { width: min(900px, 135%); max-width: none; height: auto; margin-left: -20%; filter: drop-shadow(0 30px 45px rgba(26,87,176,.18)); transform: translateY(-18px); }
+.hero-render > img { width: min(900px, 135%); max-width: none; height: auto; margin-left: -32%; filter: drop-shadow(0 30px 45px rgba(26,87,176,.18)); transform: translateY(-18px); }
 .hero-render .visual-caption { right: 9%; bottom: 22px; }
 .app-window { position: relative; z-index: 2; width: min(700px, 100%); min-height: 480px; display: grid; grid-template-columns: 70px 1fr; background: rgba(255,255,255,.92); border: 7px solid rgba(255,255,255,.68); border-radius: 26px; box-shadow: 0 38px 90px rgba(22,73,151,.24), 0 2px 0 white inset; transform: perspective(1400px) rotateY(-6deg) rotateX(2deg) translateY(-36px); overflow: hidden; backdrop-filter: blur(16px); }
 .app-sidebar { padding: 24px 12px; background: linear-gradient(180deg,#07255d 0%,#051a42 100%); border-right: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; flex-direction: column; gap: 15px; }
