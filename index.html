@@ -22,8 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=7c699cc" />
-    <script src="script.js?v=644a3c7" defer></script>
+    <link rel="stylesheet" href="styles.css?v=clm-redesign" />
+    <script src="script.js?v=clm-redesign" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -128,15 +128,31 @@
             <p data-i18n="lifecycle.lead">LegalStepy keeps every step, person and decision connected — so work moves forward without losing context.</p>
           </div>
           <div class="lifecycle-flow reveal">
-            <article class="lifecycle-card active"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM15 3v5h5M8 12h8M8 16h6" /></svg></span><small>01</small><h3 data-i18n="lifecycle.create">Create</h3><p data-i18n="lifecycle.createText">Build from approved templates or generate a new contract with AI.</p></article>
-            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
-            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M4 5h16v14H4z" /></svg></span><small>02</small><h3 data-i18n="lifecycle.collaborate">Collaborate</h3><p data-i18n="lifecycle.collaborateText">Comment, edit and compare versions in one shared workspace.</p></article>
-            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
-            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M7 12l3 3 7-7M12 3l8 4v5c0 5-3 8-8 10-5-2-8-5-8-10V7z" /></svg></span><small>03</small><h3 data-i18n="lifecycle.approve">Approve</h3><p data-i18n="lifecycle.approveText">Route contracts through the right people and company rules.</p></article>
-            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
-            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 18c4-1 5-5 8-8l2 2c-3 3-4 7-8 8H4zM13 9l3-3 2 2-3 3" /></svg></span><small>04</small><h3 data-i18n="lifecycle.sign">Sign</h3><p data-i18n="lifecycle.signText">Send for electronic signature without leaving the process.</p></article>
-            <span class="flow-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5" /></svg></span>
-            <article class="lifecycle-card"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" /></svg></span><small>05</small><h3 data-i18n="lifecycle.track">Track</h3><p data-i18n="lifecycle.trackText">Stay ahead of renewals, obligations and performance.</p></article>
+            <article class="lifecycle-card stage-create">
+              <div class="stage-top"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM15 3v5h5M8 12h8M8 16h6" /></svg></span><small>01</small></div>
+              <h3 data-i18n="lifecycle.create">Create</h3><p data-i18n="lifecycle.createText">Build from approved templates or generate a new contract with AI.</p>
+              <div class="stage-proof"><span class="proof-file">MSA</span><p><b data-i18n="lifecycle.templateReady">Approved template</b><small data-i18n="lifecycle.readyToUse">Ready to use</small></p><i>✓</i></div>
+            </article>
+            <article class="lifecycle-card stage-collaborate">
+              <div class="stage-top"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M4 5h16v14H4z" /></svg></span><small>02</small></div>
+              <h3 data-i18n="lifecycle.collaborate">Collaborate</h3><p data-i18n="lifecycle.collaborateText">Comment, edit and compare versions in one shared workspace.</p>
+              <div class="stage-proof reviewer-proof"><span class="mini-avatars"><i>NB</i><i>SB</i><i>LS</i></span><p><b data-i18n="lifecycle.reviewers">3 reviewers</b><small data-i18n="lifecycle.comments">2 open comments</small></p></div>
+            </article>
+            <article class="lifecycle-card stage-approve">
+              <div class="stage-top"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M7 12l3 3 7-7M12 3l8 4v5c0 5-3 8-8 10-5-2-8-5-8-10V7z" /></svg></span><small>03</small></div>
+              <h3 data-i18n="lifecycle.approve">Approve</h3><p data-i18n="lifecycle.approveText">Route contracts through the right people and company rules.</p>
+              <div class="stage-proof approval-proof"><span>Legal <b>✓</b></span><span>Finance <b class="pending">2h</b></span></div>
+            </article>
+            <article class="lifecycle-card stage-sign">
+              <div class="stage-top"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 18c4-1 5-5 8-8l2 2c-3 3-4 7-8 8H4zM13 9l3-3 2 2-3 3" /></svg></span><small>04</small></div>
+              <h3 data-i18n="lifecycle.sign">Sign</h3><p data-i18n="lifecycle.signText">Send for electronic signature without leaving the process.</p>
+              <div class="stage-proof signature-proof"><span class="signature-line">N. Beridze</span><p><b data-i18n="lifecycle.signed">Signed</b><small data-i18n="lifecycle.signedCount">2 of 2 parties</small></p></div>
+            </article>
+            <article class="lifecycle-card stage-track">
+              <div class="stage-top"><span class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" /></svg></span><small>05</small></div>
+              <h3 data-i18n="lifecycle.track">Track</h3><p data-i18n="lifecycle.trackText">Stay ahead of renewals, obligations and performance.</p>
+              <div class="stage-proof renewal-proof"><span><b>28</b> SEP</span><p><b data-i18n="lifecycle.renewalDue">Renewal due</b><small data-i18n="lifecycle.daysLeft">30 days remaining</small></p></div>
+            </article>
           </div>
         </div>
       </section>
@@ -148,7 +164,42 @@
             <h2 data-i18n="features.title">Control the process, not just the document.</h2>
             <p data-i18n="features.lead">A complete workspace designed around how contracts actually move through a business.</p>
           </div>
-          <div class="bento-grid">
+          <div class="product-stories">
+            <article class="product-story reveal">
+              <div class="story-copy"><span class="story-index">01 · ORGANIZE</span><h3 data-i18n="features.repository">Smart repository</h3><p data-i18n="features.repositoryText">One searchable source of truth for every contract, version and attachment.</p><ul><li data-i18n="features.repoPoint1">Find any agreement, owner or clause in seconds</li><li data-i18n="features.repoPoint2">See status, value and renewal date without opening files</li><li data-i18n="features.repoPoint3">Keep every version and attachment connected</li></ul></div>
+              <div class="product-ui repository-ui" aria-label="Illustrative LegalStepy contract repository">
+                <div class="ui-toolbar"><div class="ui-search"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M15 15l5 5"/></svg><span data-i18n="features.searchPlaceholder">Search contracts, parties or clauses...</span></div><button type="button" tabindex="-1">＋ <span data-i18n="features.newContract">New contract</span></button></div>
+                <div class="repo-filters"><span class="active" data-i18n="features.allContracts">All contracts</span><span data-i18n="features.inReview">In review</span><span data-i18n="features.awaitingMe">Awaiting me</span><span data-i18n="features.expiringSoon">Expiring soon</span></div>
+                <div class="repo-table"><div class="repo-row repo-head"><span data-i18n="features.contract">Contract</span><span data-i18n="features.owner">Owner</span><span data-i18n="features.status">Status</span><span data-i18n="features.renewal">Renewal</span></div><div class="repo-row"><span><i class="doc-badge">PDF</i><b>Master Service Agreement</b></span><span>N. Beridze</span><span><em class="status-active" data-i18n="features.active">Active</em></span><span>28 Sep 2026</span></div><div class="repo-row"><span><i class="doc-badge blue">DOC</i><b>Supplier Agreement</b></span><span>S. Gobiani</span><span><em class="status-review" data-i18n="features.review">Review</em></span><span>14 Oct 2026</span></div><div class="repo-row"><span><i class="doc-badge violet">NDA</i><b>Mutual NDA</b></span><span>S. Bakhbakhashvili</span><span><em class="status-draft" data-i18n="features.draft">Draft</em></span><span>—</span></div></div>
+              </div>
+            </article>
+
+            <article class="product-story story-reverse reveal">
+              <div class="story-copy"><span class="story-index">02 · AUTOMATE</span><h3 data-i18n="features.workflowTitle">Approvals that follow your rules</h3><p data-i18n="features.workflowLead">Turn company policy into a clear, automatic route — with no chasing and no guesswork.</p><ul><li data-i18n="features.workflowPoint1">Route by contract type, value, department or risk</li><li data-i18n="features.workflowPoint2">Give every reviewer a clear task and deadline</li><li data-i18n="features.workflowPoint3">Know exactly where every request is blocked</li></ul></div>
+              <div class="product-ui workflow-ui" aria-label="Illustrative conditional approval workflow">
+                <div class="workflow-titlebar"><span><i></i><b data-i18n="features.supplierWorkflow">Supplier agreement workflow</b></span><em data-i18n="features.live">Live</em></div>
+                <div class="workflow-canvas"><div class="workflow-node start"><small data-i18n="features.request">REQUEST</small><b data-i18n="features.newSupplierContract">New supplier contract</b></div><div class="workflow-line"></div><div class="workflow-node condition"><small data-i18n="features.condition">CONDITION</small><b data-i18n="features.valueOver">Value is over 50,000 GEL?</b><span><i data-i18n="features.no">No</i><i data-i18n="features.yes">Yes</i></span></div><div class="workflow-branches"><span></span><span></span></div><div class="workflow-approvals"><div><i>LS</i><p><b data-i18n="features.legalReview">Legal review</b><small data-i18n="features.required">Required</small></p><em>✓</em></div><div><i>FM</i><p><b data-i18n="features.financeApproval">Finance approval</b><small data-i18n="features.conditional">Conditional</small></p><em>→</em></div><div><i>CEO</i><p><b data-i18n="features.executiveApproval">Executive approval</b><small data-i18n="features.highValueOnly">High value only</small></p><em>→</em></div></div></div>
+              </div>
+            </article>
+
+            <article class="product-story reveal">
+              <div class="story-copy"><span class="story-index">03 · UNDERSTAND</span><h3 data-i18n="features.intelligenceTitle">Contract intelligence, not just storage</h3><p data-i18n="features.intelligenceLead">Surface the terms that matter, spot risk early and turn dense documents into clear next steps.</p><ul><li data-i18n="features.aiPoint1">Summarize long agreements and compare clauses</li><li data-i18n="features.aiPoint2">Flag risky language against your playbook</li><li data-i18n="features.aiPoint3">Extract obligations, dates and owners automatically</li></ul></div>
+              <div class="product-ui intelligence-ui" aria-label="Illustrative LegalStepy AI contract review">
+                <div class="contract-paper"><div class="paper-head"><span><i></i><p><b>Service Agreement</b><small>Section 8 · Term & termination</small></p></span><em>62%</em></div><h4>8.2 Automatic renewal</h4><p>This agreement renews for successive 12-month periods unless either party provides notice at least <mark>90 days</mark> before renewal.</p><div class="risk-clause"><span>!</span><p><b data-i18n="features.nonStandardTerm">Non-standard notice period</b><small data-i18n="features.playbookSays">Your playbook recommends 30 days.</small></p></div></div>
+                <div class="ai-review-card"><span class="ai-review-head"><svg viewBox="0 0 24 24"><path d="M12 2l1.5 5.5L19 9l-5.5 1.5L12 16l-1.5-5.5L5 9l5.5-1.5z"/></svg><b>LegalStepy AI</b><i data-i18n="features.reviewing">Reviewing</i></span><p data-i18n="features.aiSuggestion">Replace 90 days with 30 days to match your approved renewal policy.</p><button type="button" tabindex="-1" data-i18n="features.applySuggestion">Apply suggestion</button></div>
+              </div>
+            </article>
+
+            <div class="feature-mini-grid reveal">
+              <article><span><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM8 10h8M8 14h5"/></svg></span><h3 data-i18n="features.templates">Smart templates</h3><p data-i18n="features.templatesText">Turn company standards into faster, safer drafting.</p></article>
+              <article><span><svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 118 0v2M6 13h12v8H6zM12 16v2"/></svg></span><h3 data-i18n="features.access">Roles & permissions</h3><p data-i18n="features.accessText">Give every person exactly the access they need.</p></article>
+              <article><span><svg viewBox="0 0 24 24"><path d="M4 18c4-1 5-5 8-8l2 2c-3 3-4 7-8 8H4zM13 9l3-3 2 2-3 3"/></svg></span><h3 data-i18n="features.esign">Electronic signature</h3><p data-i18n="features.esignText">Send, sign and archive without leaving the workflow.</p></article>
+              <article><span><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></span><h3 data-i18n="features.analytics">Analytics & insights</h3><p data-i18n="features.analyticsText">See cycle times, workload, bottlenecks and upcoming obligations at a glance.</p></article>
+              <article><span><svg viewBox="0 0 24 24"><path d="M12 7v5l3 2M20 12a8 8 0 11-16 0 8 8 0 0116 0z"/></svg></span><h3 data-i18n="features.reminders">Events & reminders</h3><p data-i18n="features.remindersText">Never discover a renewal or obligation too late.</p></article>
+              <article><span><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><h3 data-i18n="features.audit">Complete audit trail</h3><p data-i18n="features.auditText">A reliable record of every change, action and decision.</p></article>
+            </div>
+          </div>
+          <div class="bento-grid legacy-features" aria-hidden="true">
             <article class="bento-card bento-wide repository-card reveal">
               <div class="bento-copy"><span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M3 7h7l2 2h9v11H3z" /></svg></span><h3 data-i18n="features.repository">Smart repository</h3><p data-i18n="features.repositoryText">One searchable source of truth for every contract, version and attachment.</p></div>
               <div class="mini-repository" aria-hidden="true"><div class="mini-search">⌕ <span>Search contracts...</span></div><div class="mini-file"><span class="file-type">PDF</span><p><b>Master Service Agreement</b><small>Updated today</small></p><i class="file-status">Active</i></div><div class="mini-file"><span class="file-type blue">DOC</span><p><b>Supplier Agreement</b><small>Updated yesterday</small></p><i class="file-status review">Review</i></div></div>
@@ -205,13 +256,13 @@
 
       <section class="section control-section">
         <div class="shell control-grid">
-          <div class="control-visual reveal" aria-hidden="true">
-            <div class="control-orbit orbit-one"></div><div class="control-orbit orbit-two"></div>
-            <div class="control-core"><img src="assets/brand/legalstepy-mark.svg" alt="" /></div>
-            <span class="control-node node-one"><svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 118 0v2M6 13h12v8H6z" /></svg></span>
-            <span class="control-node node-two"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" /></svg></span>
-            <span class="control-node node-three"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 9h8M8 13h5" /></svg></span>
-            <span class="control-node node-four"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3 8-8 10-5-2-8-5-8-10V7z" /></svg></span>
+          <div class="control-visual reveal">
+            <div class="control-console">
+              <div class="console-head"><span><img src="assets/brand/legalstepy-mark.svg" alt="" /><p><b data-i18n="control.center">Control center</b><small data-i18n="control.policyEngine">Policy & access engine</small></p></span><em><i></i><span data-i18n="control.live">Live</span></em></div>
+              <div class="console-tabs"><span class="active" data-i18n="control.rules">Approval rules</span><span data-i18n="control.permissions">Permissions</span><span data-i18n="control.auditTab">Audit</span></div>
+              <div class="policy-card"><div class="policy-title"><span><svg viewBox="0 0 24 24"><path d="M6 4h12v5H6zM4 15h6v5H4zM14 15h6v5h-6zM12 9v3M7 12h10v3"/></svg></span><p><b data-i18n="control.supplierPolicy">Supplier agreement policy</b><small data-i18n="control.autoApplies">Applies automatically</small></p><em>ON</em></div><div class="policy-condition"><small data-i18n="control.when">WHEN</small><span data-i18n="control.valueCondition">Contract value is greater than</span><b>50,000 GEL</b></div><div class="policy-route"><small data-i18n="control.thenRoute">THEN ROUTE TO</small><div><span><i>LS</i><b data-i18n="control.legal">Legal</b><em>✓</em></span><span class="route-line"></span><span><i>FM</i><b data-i18n="control.finance">Finance</b><em>2</em></span><span class="route-line"></span><span><i>CEO</i><b>CEO</b><em>3</em></span></div></div></div>
+              <div class="console-bottom"><div class="access-preview"><span><b data-i18n="control.accessPreview">Access preview</b><small>Master Service Agreement</small></span><div><i>NB</i><p><b data-i18n="control.legalAdmin">Legal admin</b><small data-i18n="control.fullAccess">Full access</small></p><em data-i18n="control.allowed">Allowed</em></div><div><i>FM</i><p><b data-i18n="control.financeTeam">Finance team</b><small data-i18n="control.reviewOnly">Review & approve only</small></p><em data-i18n="control.limited">Limited</em></div></div><div class="audit-preview"><b data-i18n="control.latestActivity">Latest activity</b><span><i>✓</i><p><b data-i18n="control.legalApproved">Legal approved</b><small>10:42 · N. Beridze</small></p></span><span><i>→</i><p><b data-i18n="control.sentFinance">Sent to Finance</b><small>10:43 · Automatic</small></p></span></div></div>
+            </div>
           </div>
           <div class="control-copy reveal"><span class="section-kicker" data-i18n="control.kicker">CONTROL BY DESIGN</span><h2 data-i18n="control.title">Your process. Your rules. Full visibility.</h2><p data-i18n="control.lead">Build contract workflows around the way your company operates — with clear ownership, controlled access and a reliable record at every step.</p><div class="control-points"><div><span><svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 118 0v2M6 13h12v8H6z" /></svg></span><p><b data-i18n="control.access">Role-based access</b><small data-i18n="control.accessText">Keep sensitive information visible only to the right people.</small></p></div><div><span><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg></span><p><b data-i18n="control.audit">Audit-ready history</b><small data-i18n="control.auditText">See who did what, when and why — without searching.</small></p></div><div><span><svg viewBox="0 0 24 24"><path d="M6 4h12v5H6zM4 15h6v5H4zM14 15h6v5h-6zM12 9v3M7 12h10v3" /></svg></span><p><b data-i18n="control.workflow">Custom approval workflows</b><small data-i18n="control.workflowText">Turn company policies into repeatable digital processes.</small></p></div></div></div>
         </div>
