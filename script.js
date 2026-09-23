@@ -30,6 +30,8 @@ const translations = {
       versionTitle: "Version confusion", versionText: "Nobody is fully sure which document is current or who changed what.",
       deadlineTitle: "Missed deadlines", deadlineText: "Renewals and obligations surface only when they become urgent.",
       controlTitle: "Limited control", controlText: "Approvals, access and accountability remain difficult to track.",
+      messages: "messages", attachments: "attachments", decisionBuried: "Decision buried", whichFinal: "Which one is final?",
+      daysOverdue: "days overdue", renewalNotice: "Renewal notice", noReminder: "No reminder set", ownerUnknown: "Owner unknown", pendingApprovals: "3 approvals pending", blocked: "Blocked",
     },
     lifecycle: {
       kicker: "ONE CONNECTED LIFECYCLE", title: "From first draft to final deadline.",
@@ -41,6 +43,7 @@ const translations = {
       track: "Track", trackText: "Stay ahead of renewals, obligations and performance.",
       templateReady: "Approved template", readyToUse: "Ready to use", reviewers: "3 reviewers", comments: "2 open comments",
       signed: "Signed", signedCount: "2 of 2 parties", renewalDue: "Renewal due", daysLeft: "30 days remaining",
+      signer1: "Noe Beridze", signer2: "Sophie Bakhbakhashvili", obligations: "obligations", oneDue: "1 due this week",
     },
     features: {
       kicker: "EVERYTHING IN ONE PLACE", title: "Control the process, not just the document.",
@@ -55,6 +58,7 @@ const translations = {
       repoPoint1: "Find any agreement, owner or clause in seconds", repoPoint2: "See status, value and renewal date without opening files", repoPoint3: "Keep every version and attachment connected",
       searchPlaceholder: "Search contracts, parties or clauses...", newContract: "New contract", allContracts: "All contracts", inReview: "In review", awaitingMe: "Awaiting me", expiringSoon: "Expiring soon",
       contract: "Contract", owner: "Owner", status: "Status", renewal: "Renewal", active: "Active", review: "Review", draft: "Draft",
+      connectedRecords: "Connected records", completeView: "Complete relationship view", amendments: "Amendments", twoSigned: "2 signed", subcontracts: "Subcontracts", activeLabel: "Active", counterparties: "Related counterparties", linked: "Linked", legalTasks: "Legal tasks", twoDue: "2 due soon",
       workflowTitle: "Approvals that follow your rules", workflowLead: "Turn company policy into a clear, automatic route — with no chasing and no guesswork.",
       workflowPoint1: "Route by contract type, value, department or risk", workflowPoint2: "Give every reviewer a clear task and deadline", workflowPoint3: "Know exactly where every request is blocked",
       supplierWorkflow: "Supplier agreement workflow", live: "Live", request: "REQUEST", newSupplierContract: "New supplier contract", condition: "CONDITION", valueOver: "Value is over 50,000 GEL?", no: "No", yes: "Yes",
@@ -62,6 +66,7 @@ const translations = {
       intelligenceTitle: "Contract intelligence, not just storage", intelligenceLead: "Surface the terms that matter, spot risk early and turn dense documents into clear next steps.",
       aiPoint1: "Summarize long agreements and compare clauses", aiPoint2: "Flag risky language against your playbook", aiPoint3: "Extract obligations, dates and owners automatically",
       nonStandardTerm: "Non-standard notice period", playbookSays: "Your playbook recommends 30 days.", reviewing: "Reviewing", aiSuggestion: "Replace 90 days with 30 days to match your approved renewal policy.", applySuggestion: "Apply suggestion",
+      reviewed: "Reviewed", obligationDetected: "Obligation detected", obligationDetail: "Send performance report every quarter · Owner: Operations", reviewComplete: "Review complete", risks: "Risks", obligationsLabel: "Obligations", keyDates: "Key dates", highRiskFinding: "High-risk finding",
       esign: "Electronic signature", esignText: "Send, sign and archive without leaving the workflow.",
     },
     teams: {
@@ -143,6 +148,8 @@ const translations = {
       versionTitle: "ვერსიების გაურკვევლობა", versionText: "არავინ არის ბოლომდე დარწმუნებული, რომელია ბოლო ვერსია ან ვინ რა შეცვალა.",
       deadlineTitle: "გამორჩენილი ვადები", deadlineText: "განახლებისა და ვალდებულებების შესახებ მხოლოდ მაშინ ვიგებთ, როცა უკვე გვიანია.",
       controlTitle: "შეზღუდული კონტროლი", controlText: "დამტკიცებების, წვდომებისა და პასუხისმგებლობების კონტროლი რთულია.",
+      messages: "წერილი", attachments: "დანართი", decisionBuried: "გადაწყვეტილება დაიკარგა", whichFinal: "რომელია საბოლოო?",
+      daysOverdue: "დღით დაგვიანება", renewalNotice: "განახლების შეტყობინება", noReminder: "შეხსენება არ არის", ownerUnknown: "პასუხისმგებელი უცნობია", pendingApprovals: "3 დამტკიცება მოლოდინშია", blocked: "შეფერხებულია",
     },
     lifecycle: {
       kicker: "ერთი დაკავშირებული სასიცოცხლო ციკლი", title: "პირველი მონახაზიდან საბოლოო ვადამდე.",
@@ -154,6 +161,7 @@ const translations = {
       track: "კონტროლი", trackText: "წინასწარ აკონტროლეთ ვადები, ვალდებულებები და შედეგები.",
       templateReady: "დამტკიცებული შაბლონი", readyToUse: "მზადაა გამოსაყენებლად", reviewers: "3 შემფასებელი", comments: "2 ღია კომენტარი",
       signed: "ხელმოწერილია", signedCount: "2-დან 2 მხარე", renewalDue: "განახლების ვადა", daysLeft: "დარჩენილია 30 დღე",
+      signer1: "ნოე ბერიძე", signer2: "სოფი ბახბახაშვილი", obligations: "ვალდებულება", oneDue: "1 შესასრულებელია ამ კვირაში",
     },
     features: {
       kicker: "ყველაფერი ერთ სივრცეში", title: "მართეთ მთელი პროცესი და არა მხოლოდ დოკუმენტი.",
@@ -168,6 +176,7 @@ const translations = {
       repoPoint1: "იპოვეთ ნებისმიერი ხელშეკრულება, მხარე ან პუნქტი წამებში", repoPoint2: "ფაილის გახსნის გარეშე ნახეთ სტატუსი, ღირებულება და განახლების თარიღი", repoPoint3: "შეინახეთ ყველა ვერსია და დანართი ერთ კონტექსტში",
       searchPlaceholder: "მოძებნეთ ხელშეკრულება, მხარე ან პუნქტი...", newContract: "ახალი ხელშეკრულება", allContracts: "ყველა", inReview: "განხილვაში", awaitingMe: "ჩემს მოლოდინში", expiringSoon: "ვადა მალე იწურება",
       contract: "ხელშეკრულება", owner: "პასუხისმგებელი", status: "სტატუსი", renewal: "განახლება", active: "აქტიური", review: "განხილვა", draft: "მონახაზი",
+      connectedRecords: "დაკავშირებული ჩანაწერები", completeView: "სრული ურთიერთკავშირი", amendments: "ცვლილებები", twoSigned: "2 ხელმოწერილი", subcontracts: "ქვეხელშეკრულებები", activeLabel: "აქტიური", counterparties: "დაკავშირებული კონტრაგენტები", linked: "დაკავშირებული", legalTasks: "იურიდიული დავალებები", twoDue: "2-ის ვადა ახლოვდება",
       workflowTitle: "დამტკიცებები, რომლებიც თქვენს წესებს მიჰყვება", workflowLead: "კომპანიის პოლიტიკა აქციეთ მკაფიო, ავტომატურ მარშრუტად — დევნისა და გაურკვევლობის გარეშე.",
       workflowPoint1: "განსაზღვრეთ მარშრუტი ტიპის, ღირებულების, დეპარტამენტის ან რისკის მიხედვით", workflowPoint2: "თითოეულ შემფასებელს მიეცით მკაფიო დავალება და ვადა", workflowPoint3: "ზუსტად დაინახეთ, სად და რატომ შეფერხდა პროცესი",
       supplierWorkflow: "მომწოდებლის ხელშეკრულების პროცესი", live: "აქტიური", request: "მოთხოვნა", newSupplierContract: "ახალი მომწოდებლის ხელშეკრულება", condition: "პირობა", valueOver: "ღირებულება აღემატება 50,000 GEL-ს?", no: "არა", yes: "კი",
@@ -175,6 +184,7 @@ const translations = {
       intelligenceTitle: "ხელშეკრულების ინტელექტი და არა უბრალოდ საცავი", intelligenceLead: "გამოავლინეთ მნიშვნელოვანი პირობები, დროულად შენიშნეთ რისკი და რთული დოკუმენტები მკაფიო მოქმედებებად აქციეთ.",
       aiPoint1: "შეაჯამეთ ვრცელი ხელშეკრულებები და შეადარეთ პუნქტები", aiPoint2: "მონიშნეთ სარისკო ტექსტი თქვენი წესების მიხედვით", aiPoint3: "ავტომატურად ამოიღეთ ვალდებულებები, თარიღები და პასუხისმგებლები",
       nonStandardTerm: "არასტანდარტული შეტყობინების ვადა", playbookSays: "თქვენი წესები 30 დღეს ითვალისწინებს.", reviewing: "ამოწმებს", aiSuggestion: "შეცვალეთ 90 დღე 30 დღით, რათა დაემთხვეს დამტკიცებულ განახლების პოლიტიკას.", applySuggestion: "ცვლილების გამოყენება",
+      reviewed: "შემოწმებულია", obligationDetected: "ვალდებულება აღმოჩენილია", obligationDetail: "შესრულების ანგარიში ყოველ კვარტალში · პასუხისმგებელი: ოპერაციები", reviewComplete: "შემოწმება დასრულდა", risks: "რისკი", obligationsLabel: "ვალდებულება", keyDates: "მთავარი თარიღი", highRiskFinding: "მაღალი რისკის აღმოჩენა",
       esign: "ელექტრონული ხელმოწერა", esignText: "გააგზავნეთ, მოაწერეთ ხელი და დაარქივეთ პროცესიდან გაუსვლელად.",
     },
     teams: {
