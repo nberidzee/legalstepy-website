@@ -8,8 +8,9 @@ const translations = {
     hero: {
       eyebrow: "AI-powered contract lifecycle management",
       title: "Every contract.<br /><span>One controlled workspace.</span>",
-      lead: "Create, collaborate, approve, sign and track contracts in one controlled workspace — without the email chaos.",
-      cta: "Book a demo", secondary: "Explore the platform",
+      lead: "Move contracts from request to signature faster, keep every decision visible, and never lose track of a renewal or obligation.",
+      cta: "Book a demo", secondary: "Take the product tour",
+      outcome1: "Faster approvals", outcome2: "Lower contract risk", outcome3: "No missed renewals",
       note: "Built for legal, procurement, finance and HR teams",
       approved: "Approved", approvedSub: "Legal review complete",
       reminder: "Renewal reminder", reminderSub: "30 days remaining",
@@ -50,7 +51,7 @@ const translations = {
     features: {
       kicker: "EVERYTHING IN ONE PLACE", title: "Control the process, not just the document.",
       lead: "A complete workspace designed around how contracts actually move through a business.",
-      repository: "Smart repository", repositoryText: "One searchable source of truth for every contract, version and attachment.",
+      repository: "Find the complete contract story in seconds", repositoryText: "One searchable source of truth for every contract, version, owner and connected record.",
       ai: "AI assistant", aiText: "Draft, summarize and surface key terms in seconds.",
       access: "Roles & permissions", accessText: "Give every person exactly the access they need.",
       templates: "Smart templates", templatesText: "Turn company standards into faster, safer drafting.",
@@ -62,22 +63,26 @@ const translations = {
       contract: "Contract", owner: "Owner", status: "Status", renewal: "Renewal", active: "Active", review: "Review", draft: "Draft",
       connectedRecords: "Connected records", completeView: "Complete relationship view", amendments: "Amendments", twoSigned: "2 signed", subcontracts: "Subcontracts", activeLabel: "Active", counterparties: "Related counterparties", linked: "Linked", legalTasks: "Legal tasks", twoDue: "2 due soon",
       linkedTo: "LINKED TO CONTRACT", amendment: "Amendment", priceAdjustment: "Price Adjustment #02", signed: "Signed", subcontract: "Subcontract", cloudHosting: "Cloud Hosting Services", counterparty: "Counterparty", verified: "Verified", legalTask: "Legal task", reviewLiability: "Review liability cap", dueSep: "Due Sep 30",
-      workflowTitle: "Approvals that follow your rules", workflowLead: "Turn company policy into a clear, automatic route — with no chasing and no guesswork.",
+      workflowTitle: "Move approvals forward without chasing people", workflowLead: "Turn company policy into a clear, automatic route where every reviewer, deadline and signature stays visible.",
       workflowPoint1: "Route by contract type, value, department or risk", workflowPoint2: "Give every reviewer a clear task and deadline", workflowPoint3: "Know exactly where every request is blocked",
       supplierWorkflow: "Supplier agreement workflow", live: "Live", request: "REQUEST", newSupplierContract: "New supplier contract", condition: "CONDITION", valueOver: "Value is over 50,000 GEL?", no: "No", yes: "Yes",
       legalReview: "Legal review", required: "Required", financeApproval: "Finance approval", conditional: "Conditional", executiveApproval: "Executive approval", highValueOnly: "High value only",
       approvedByNoe: "Approved · N. Beridze", approvedByFinance: "Approved · Finance", approvedByLuka: "Approved · L. Shakhkulashvili", eSignature: "E-SIGNATURE", sentForSignature: "Sent for signature", twoOfTwoSigned: "2 of 2 signed", noeName: "Noe Beridze", sophieName: "Sophie Bakhbakhashvili", signedAt: "Signed · 14:22", signedAt2: "Signed · 14:31", executed: "Contract executed", archivedAutomatically: "Final PDF archived automatically",
-      intelligenceTitle: "Contract intelligence, not just storage", intelligenceLead: "Surface the terms that matter, spot risk early and turn dense documents into clear next steps.",
+      intelligenceTitle: "Spot risk before it becomes a problem", intelligenceLead: "Surface the terms that matter and turn dense documents into clear, actionable next steps.",
       aiPoint1: "Summarize long agreements and compare clauses", aiPoint2: "Flag risky language against your playbook", aiPoint3: "Extract obligations, dates and owners automatically",
       nonStandardTerm: "Non-standard notice period", playbookSays: "Your playbook recommends 30 days.", reviewing: "Reviewing", aiSuggestion: "Replace 90 days with 30 days to match your approved renewal policy.", applySuggestion: "Apply suggestion",
       reviewed: "Reviewed", obligationDetected: "Obligation detected", obligationDetail: "Send performance report every quarter · Owner: Operations", reviewComplete: "Review complete", risks: "Risks", obligationsLabel: "Obligations", keyDates: "Key dates", highRiskFinding: "High-risk finding",
       esign: "Electronic signature", esignText: "Send, sign and archive without leaving the workflow.",
       liabilityCap: "Liability cap", missingHighRisk: "Missing · High risk", paymentTerms: "Payment terms", governingLaw: "Governing law", georgia: "Georgia", renewalTerm: "Renewal", twelveMonths: "12 months", openFullReview: "Open full review",
       approvedTemplate: "Approved template", legalTeam: "Legal team", fullAccess: "Full access", financeTeam: "Finance", reviewOnly: "Review only", noeShort: "Noe B.", sophieShort: "Sophie B.", avgCycle: "Average cycle time", renewalNotice: "Renewal notice", thirtyDays: "30 days", legalApproved: "Legal approved",
+      outcomeKicker: "THE EVERYDAY ADVANTAGE", outcomeTitle: "Less admin. Fewer surprises. More control.", outcomeLead: "The details around every contract become a repeatable, visible process — not another list of tools to manage.",
+      draftConfidence: "Draft with confidence", draftConfidenceText: "Start from approved templates and company standards, so every agreement begins on the right terms.", approvedTemplates: "Approved templates", companyClauses: "Company clauses",
+      keepAccountable: "Keep every action accountable", keepAccountableText: "Control access, collect signatures and preserve a reliable record of every decision.", roleAccess: "Role-based access", signatureAudit: "E-signature & audit",
+      stayAhead: "Stay ahead of what comes next", stayAheadText: "See workload, obligations and renewals early enough to act — before they become urgent.", portfolioInsights: "Portfolio insights", smartReminders: "Smart reminders",
     },
     teams: {
-      kicker: "BUILT FOR THE WHOLE BUSINESS", title: "Everyone sees what they need. Nothing gets lost.",
-      lead: "LegalStepy connects the teams involved in contract work while keeping responsibilities and access clear.",
+      kicker: "VALUE FOR EVERY TEAM", title: "One contract process. Clear value for every team.",
+      lead: "LegalStepy gives each team the visibility and control it needs — without creating separate processes.",
     },
     ai: {
       kicker: "LEGALSTEPY AI", title: "Ask your contracts.<br />Get clear answers.",
@@ -118,7 +123,16 @@ const translations = {
     form: {
       name: "Name and surname", namePlaceholder: "Your name", email: "Work email", company: "Company", companyPlaceholder: "Company name",
       role: "Your role", rolePlaceholder: "Legal, Finance, CEO...", message: "What would you like to improve?",
-      messagePlaceholder: "Tell us briefly about your contract process", consent: "I agree to be contacted about my request.", submit: "Request a demo",
+      messagePlaceholder: "Tell us briefly about your contract process", consent: "I agree to be contacted about my request.", submit: "Request a demo", note: "Three fields. No lengthy questionnaire.",
+    },
+    tour: {
+      kicker: "PRODUCT TOUR", title: "See the complete contract journey",
+      step1: "Organize", step2: "Review", step3: "Approve", step4: "Sign", step5: "Track",
+      organizeTitle: "Find the full contract story in seconds.", organizeText: "Every agreement, version, owner and connected record is searchable in one controlled repository.", search: "Search contracts, parties or clauses...", linked: "CONNECTED RECORDS", amendment: "Amendment #02", signed: "Signed", legalTask: "Review liability cap", due: "Due Sep 30",
+      reviewTitle: "Spot risk before it becomes a problem.", reviewText: "LegalStepy AI surfaces non-standard terms, obligations, owners and key dates before approval.", highRisk: "High-risk finding", riskDetail: "Company policy requires a 30-day notice period.", payment: "Payment", law: "Governing law", georgia: "Georgia",
+      approveTitle: "Move approvals forward without chasing people.", approveText: "Company rules automatically route every agreement to the right reviewers and make ownership clear.", request: "REQUEST", supplierAgreement: "Supplier agreement · 75,000 GEL", legal: "Legal", finance: "Finance", allApproved: "All approvals complete",
+      signTitle: "Collect every signature without leaving the process.", signText: "Send the final version to every signer and archive the executed agreement automatically.", signed1422: "Signed · 14:22", signed1431: "Signed · 14:31", executed: "Contract executed",
+      trackTitle: "Never lose control of what comes next.", trackText: "Track renewals, obligations and bottlenecks early across the entire contract portfolio.", cta: "Book a personalized demo", activeContracts: "Active contracts", awaiting: "Awaiting approval", renewals: "Renewals this month", renewalNotice: "Renewal notice", onTrack: "On track", previous: "Previous", next: "Next",
     },
     footer: {
       copy: "One controlled workspace for every contract, decision and deadline.", product: "Product", company: "Company", follow: "Follow", contact: "Contact", rights: "All rights reserved.",
@@ -133,8 +147,9 @@ const translations = {
     hero: {
       eyebrow: "AI-ზე დაფუძნებული ხელშეკრულებების მართვა",
       title: "ყველა ხელშეკრულება.<br /><span>ერთი კონტროლირებადი სივრცე.</span>",
-      lead: "შექმენით, შეათანხმეთ, დაამტკიცეთ, მოაწერეთ ხელი და აკონტროლეთ ხელშეკრულებები ერთ სივრცეში — ელფოსტის ქაოსის გარეშე.",
-      cta: "დაჯავშნე დემო", secondary: "დაათვალიერე პლატფორმა",
+      lead: "უფრო სწრაფად გადაიყვანეთ ხელშეკრულება მოთხოვნიდან ხელმოწერამდე, შეინარჩუნეთ ყველა გადაწყვეტილების ხილვადობა და არასდროს გამოგრჩეთ განახლება ან ვალდებულება.",
+      cta: "დაჯავშნე დემო", secondary: "დაათვალიერე პროდუქტი",
+      outcome1: "უფრო სწრაფი დამტკიცება", outcome2: "ნაკლები სახელშეკრულებო რისკი", outcome3: "არცერთი გამორჩენილი განახლება",
       note: "შექმნილია იურიდიული, შესყიდვების, ფინანსური და HR გუნდებისთვის",
       approved: "დამტკიცებულია", approvedSub: "იურიდიული შემოწმება დასრულდა",
       reminder: "განახლების შეხსენება", reminderSub: "დარჩენილია 30 დღე",
@@ -175,7 +190,7 @@ const translations = {
     features: {
       kicker: "ყველაფერი ერთ სივრცეში", title: "მართეთ მთელი პროცესი და არა მხოლოდ დოკუმენტი.",
       lead: "სრული სამუშაო სივრცე, რომელიც შექმნილია ბიზნესში ხელშეკრულებების რეალური მოძრაობის მიხედვით.",
-      repository: "ჭკვიანი საცავი", repositoryText: "ყველა ხელშეკრულების, ვერსიისა და დანართის ერთიანი, მარტივად საძიებო წყარო.",
+      repository: "იპოვეთ ხელშეკრულების სრული ისტორია წამებში", repositoryText: "ყველა ხელშეკრულების, ვერსიის, პასუხისმგებლისა და დაკავშირებული ჩანაწერის ერთიანი საძიებო წყარო.",
       ai: "AI ასისტენტი", aiText: "შექმენით, შეაჯამეთ და მოძებნეთ მნიშვნელოვანი პირობები წამებში.",
       access: "როლები და წვდომები", accessText: "თითოეულ ადამიანს მიეცით ზუსტად ის წვდომა, რაც სჭირდება.",
       templates: "ჭკვიანი შაბლონები", templatesText: "კომპანიის სტანდარტები აქციეთ უფრო სწრაფ და უსაფრთხო პროცესად.",
@@ -187,22 +202,26 @@ const translations = {
       contract: "ხელშეკრულება", owner: "პასუხისმგებელი", status: "სტატუსი", renewal: "განახლება", active: "აქტიური", review: "განხილვა", draft: "მონახაზი",
       connectedRecords: "დაკავშირებული ჩანაწერები", completeView: "სრული ურთიერთკავშირი", amendments: "ცვლილებები", twoSigned: "2 ხელმოწერილი", subcontracts: "ქვეხელშეკრულებები", activeLabel: "აქტიური", counterparties: "დაკავშირებული კონტრაგენტები", linked: "დაკავშირებული", legalTasks: "იურიდიული დავალებები", twoDue: "2-ის ვადა ახლოვდება",
       linkedTo: "დაკავშირებულია ხელშეკრულებასთან", amendment: "ცვლილება", priceAdjustment: "ფასის ცვლილება #02", signed: "ხელმოწერილი", subcontract: "ქვეხელშეკრულება", cloudHosting: "ქლაუდ ჰოსტინგის მომსახურება", counterparty: "კონტრაგენტი", verified: "დადასტურებული", legalTask: "იურიდიული დავალება", reviewLiability: "პასუხისმგებლობის ლიმიტის განხილვა", dueSep: "ვადა: 30 სექ",
-      workflowTitle: "დამტკიცებები, რომლებიც თქვენს წესებს მიჰყვება", workflowLead: "კომპანიის პოლიტიკა აქციეთ მკაფიო, ავტომატურ მარშრუტად — დევნისა და გაურკვევლობის გარეშე.",
+      workflowTitle: "წაიყვანეთ დამტკიცებები წინ ადამიანების დევნის გარეშე", workflowLead: "კომპანიის პოლიტიკა აქციეთ მკაფიო ავტომატურ მარშრუტად, სადაც ყველა შემფასებელი, ვადა და ხელმოწერა ხილულია.",
       workflowPoint1: "განსაზღვრეთ მარშრუტი ტიპის, ღირებულების, დეპარტამენტის ან რისკის მიხედვით", workflowPoint2: "თითოეულ შემფასებელს მიეცით მკაფიო დავალება და ვადა", workflowPoint3: "ზუსტად დაინახეთ, სად და რატომ შეფერხდა პროცესი",
       supplierWorkflow: "მომწოდებლის ხელშეკრულების პროცესი", live: "აქტიური", request: "მოთხოვნა", newSupplierContract: "ახალი მომწოდებლის ხელშეკრულება", condition: "პირობა", valueOver: "ღირებულება აღემატება 50,000 GEL-ს?", no: "არა", yes: "კი",
       legalReview: "იურიდიული განხილვა", required: "სავალდებულო", financeApproval: "ფინანსების დამტკიცება", conditional: "პირობითი", executiveApproval: "დირექტორის დამტკიცება", highValueOnly: "მხოლოდ მაღალი ღირებულება",
       approvedByNoe: "დაამტკიცა · ნ. ბერიძე", approvedByFinance: "დაამტკიცა · ფინანსებმა", approvedByLuka: "დაამტკიცა · ლ. შახყულაშვილმა", eSignature: "ელექტრონული ხელმოწერა", sentForSignature: "გაგზავნილია ხელმოწერაზე", twoOfTwoSigned: "2-დან 2 ხელმოწერილია", noeName: "ნოე ბერიძე", sophieName: "სოფი ბახბახაშვილი", signedAt: "ხელმოწერილია · 14:22", signedAt2: "ხელმოწერილია · 14:31", executed: "ხელშეკრულება გაფორმდა", archivedAutomatically: "საბოლოო PDF ავტომატურად დაარქივდა",
-      intelligenceTitle: "ხელშეკრულების ინტელექტი და არა უბრალოდ საცავი", intelligenceLead: "გამოავლინეთ მნიშვნელოვანი პირობები, დროულად შენიშნეთ რისკი და რთული დოკუმენტები მკაფიო მოქმედებებად აქციეთ.",
+      intelligenceTitle: "შენიშნეთ რისკი, სანამ პრობლემად იქცევა", intelligenceLead: "გამოავლინეთ მნიშვნელოვანი პირობები და რთული დოკუმენტები მკაფიო, შესასრულებელ ნაბიჯებად აქციეთ.",
       aiPoint1: "შეაჯამეთ ვრცელი ხელშეკრულებები და შეადარეთ პუნქტები", aiPoint2: "მონიშნეთ სარისკო ტექსტი თქვენი წესების მიხედვით", aiPoint3: "ავტომატურად ამოიღეთ ვალდებულებები, თარიღები და პასუხისმგებლები",
       nonStandardTerm: "არასტანდარტული შეტყობინების ვადა", playbookSays: "თქვენი წესები 30 დღეს ითვალისწინებს.", reviewing: "ამოწმებს", aiSuggestion: "შეცვალეთ 90 დღე 30 დღით, რათა დაემთხვეს დამტკიცებულ განახლების პოლიტიკას.", applySuggestion: "ცვლილების გამოყენება",
       reviewed: "შემოწმებულია", obligationDetected: "ვალდებულება აღმოჩენილია", obligationDetail: "შესრულების ანგარიში ყოველ კვარტალში · პასუხისმგებელი: ოპერაციები", reviewComplete: "შემოწმება დასრულდა", risks: "რისკი", obligationsLabel: "ვალდებულება", keyDates: "მთავარი თარიღი", highRiskFinding: "მაღალი რისკის აღმოჩენა",
       esign: "ელექტრონული ხელმოწერა", esignText: "გააგზავნეთ, მოაწერეთ ხელი და დაარქივეთ პროცესიდან გაუსვლელად.",
       liabilityCap: "პასუხისმგებლობის ლიმიტი", missingHighRisk: "არ არის · მაღალი რისკი", paymentTerms: "გადახდის პირობა", governingLaw: "მარეგულირებელი სამართალი", georgia: "საქართველო", renewalTerm: "განახლება", twelveMonths: "12 თვე", openFullReview: "სრული განხილვის გახსნა",
       approvedTemplate: "დამტკიცებული შაბლონი", legalTeam: "იურიდიული გუნდი", fullAccess: "სრული წვდომა", financeTeam: "ფინანსები", reviewOnly: "მხოლოდ განხილვა", noeShort: "ნოე ბ.", sophieShort: "სოფი ბ.", avgCycle: "საშუალო ციკლი", renewalNotice: "განახლების შეტყობინება", thirtyDays: "30 დღე", legalApproved: "იურიდიულმა დაამტკიცა",
+      outcomeKicker: "ყოველდღიური უპირატესობა", outcomeTitle: "ნაკლები ადმინისტრირება. ნაკლები სიურპრიზი. მეტი კონტროლი.", outcomeLead: "ხელშეკრულების გარშემო ყოველდღიური სამუშაო ხდება განმეორებადი და ხილული პროცესი — და არა სამართავი ხელსაწყოების კიდევ ერთი სია.",
+      draftConfidence: "შექმენით თავდაჯერებით", draftConfidenceText: "დაიწყეთ დამტკიცებული შაბლონებითა და კომპანიის სტანდარტებით, რათა ყველა ხელშეკრულება სწორი პირობებით დაიწყოს.", approvedTemplates: "დამტკიცებული შაბლონები", companyClauses: "კომპანიის პირობები",
+      keepAccountable: "ყველა მოქმედება ანგარიშვალდებულია", keepAccountableText: "მართეთ წვდომა, შეაგროვეთ ხელმოწერები და შეინარჩუნეთ ყველა გადაწყვეტილების სანდო ისტორია.", roleAccess: "როლებზე დაფუძნებული წვდომა", signatureAudit: "ელ-ხელმოწერა და აუდიტი",
+      stayAhead: "წინასწარ იცოდეთ, რა მოდის შემდეგ", stayAheadText: "დროულად დაინახეთ დატვირთვა, ვალდებულებები და განახლებები — სანამ გადაუდებელი გახდება.", portfolioInsights: "პორტფელის ხედები", smartReminders: "ჭკვიანი შეხსენებები",
     },
     teams: {
-      kicker: "შექმნილია მთელი ბიზნესისთვის", title: "ყველა ხედავს იმას, რაც სჭირდება. არაფერი იკარგება.",
-      lead: "LegalStepy ხელშეკრულების პროცესში ჩართულ გუნდებს აკავშირებს და პასუხისმგებლობებსა და წვდომებს მკაფიოდ განსაზღვრავს.",
+      kicker: "ღირებულება ყველა გუნდისთვის", title: "ერთი სახელშეკრულებო პროცესი. მკაფიო შედეგი ყველა გუნდისთვის.",
+      lead: "LegalStepy თითოეულ გუნდს აძლევს საჭირო ხილვადობასა და კონტროლს — ცალკეული პროცესების შექმნის გარეშე.",
     },
     ai: {
       kicker: "LEGALSTEPY AI", title: "ჰკითხეთ თქვენს ხელშეკრულებებს.<br />მიიღეთ მკაფიო პასუხები.",
@@ -243,7 +262,16 @@ const translations = {
     form: {
       name: "სახელი და გვარი", namePlaceholder: "თქვენი სახელი", email: "სამუშაო ელფოსტა", company: "კომპანია", companyPlaceholder: "კომპანიის დასახელება",
       role: "თქვენი პოზიცია", rolePlaceholder: "იურისტი, ფინანსები, CEO...", message: "რის გაუმჯობესებას ისურვებდით?",
-      messagePlaceholder: "მოკლედ მოგვიყევით თქვენს სახელშეკრულებო პროცესზე", consent: "ვეთანხმები, რომ ჩემს მოთხოვნასთან დაკავშირებით დამიკავშირდნენ.", submit: "დემოს მოთხოვნა",
+      messagePlaceholder: "მოკლედ მოგვიყევით თქვენს სახელშეკრულებო პროცესზე", consent: "ვეთანხმები, რომ ჩემს მოთხოვნასთან დაკავშირებით დამიკავშირდნენ.", submit: "დემოს მოთხოვნა", note: "სამი ველი. გრძელი კითხვარის გარეშე.",
+    },
+    tour: {
+      kicker: "პროდუქტის ტური", title: "ნახეთ ხელშეკრულების სრული გზა",
+      step1: "ორგანიზება", step2: "განხილვა", step3: "დამტკიცება", step4: "ხელმოწერა", step5: "კონტროლი",
+      organizeTitle: "იპოვეთ ხელშეკრულების სრული ისტორია წამებში.", organizeText: "ყველა ხელშეკრულება, ვერსია, პასუხისმგებელი და დაკავშირებული ჩანაწერი ერთ კონტროლირებად საცავში იძებნება.", search: "მოძებნეთ ხელშეკრულება, მხარე ან პუნქტი...", linked: "დაკავშირებული ჩანაწერები", amendment: "ცვლილება #02", signed: "ხელმოწერილია", legalTask: "პასუხისმგებლობის ლიმიტის განხილვა", due: "ვადა: 30 სექ",
+      reviewTitle: "შენიშნეთ რისკი, სანამ პრობლემად იქცევა.", reviewText: "LegalStepy AI დამტკიცებამდე გაჩვენებთ არასტანდარტულ პირობებს, ვალდებულებებს, პასუხისმგებლებსა და მნიშვნელოვან თარიღებს.", highRisk: "მაღალი რისკის აღმოჩენა", riskDetail: "კომპანიის წესები შეტყობინების 30-დღიან ვადას ითვალისწინებს.", payment: "გადახდა", law: "მარეგულირებელი სამართალი", georgia: "საქართველო",
+      approveTitle: "წაიყვანეთ დამტკიცებები წინ ადამიანების დევნის გარეშე.", approveText: "კომპანიის წესები თითოეულ ხელშეკრულებას ავტომატურად უგზავნის შესაბამის შემფასებლებს და პასუხისმგებლობას მკაფიოდ ანაწილებს.", request: "მოთხოვნა", supplierAgreement: "მომწოდებლის ხელშეკრულება · 75,000 GEL", legal: "იურიდიული", finance: "ფინანსები", allApproved: "ყველა დამტკიცება დასრულდა",
+      signTitle: "შეაგროვეთ ხელმოწერები პროცესიდან გაუსვლელად.", signText: "გაუგზავნეთ საბოლოო ვერსია ყველა ხელმომწერს და გაფორმებული ხელშეკრულება ავტომატურად დაარქივეთ.", signed1422: "ხელმოწერილია · 14:22", signed1431: "ხელმოწერილია · 14:31", executed: "ხელშეკრულება გაფორმდა",
+      trackTitle: "არასდროს დაკარგოთ კონტროლი შემდეგ ნაბიჯზე.", trackText: "წინასწარ აკონტროლეთ განახლებები, ვალდებულებები და შეფერხებები ხელშეკრულებების მთელ პორტფელში.", cta: "დაჯავშნეთ პერსონალური დემო", activeContracts: "აქტიური ხელშეკრულებები", awaiting: "ელოდება დამტკიცებას", renewals: "ამ თვის განახლებები", renewalNotice: "განახლების შეტყობინება", onTrack: "გეგმის მიხედვით", previous: "წინა", next: "შემდეგი",
     },
     footer: {
       copy: "ერთი კონტროლირებადი სივრცე ყველა ხელშეკრულებისთვის, გადაწყვეტილებისა და ვადისთვის.", product: "პროდუქტი", company: "კომპანია", follow: "გამოგვყევით", contact: "კონტაქტი", rights: "ყველა უფლება დაცულია.",
@@ -253,18 +281,18 @@ const translations = {
 
 const roleContent = {
   en: {
-    legal: { label: "LEGAL TEAM", title: "Move contracts forward without losing control.", text: "Standardize drafting, manage reviews and keep every version, comment and approval connected.", list: ["Approved templates and clause control", "Clear internal and external collaboration", "Complete version history and audit trail"] },
-    management: { label: "MANAGEMENT", title: "Make decisions with the full picture in view.", text: "See contract status, business exposure and pending decisions without chasing updates.", list: ["Live status across the portfolio", "Clear ownership and bottleneck visibility", "Decision-ready analytics and reporting"] },
-    procurement: { label: "PROCUREMENT", title: "Keep every supplier agreement moving.", text: "Coordinate negotiation, approvals and renewals while maintaining one reliable vendor record.", list: ["Structured supplier workflows", "Faster cross-team approvals", "Renewal and obligation tracking"] },
-    finance: { label: "FINANCE", title: "Know the financial impact before you approve.", text: "Review commercial terms, payment obligations and approvals in the same controlled process.", list: ["Clear approval requests", "Payment term visibility", "Upcoming obligation reminders"] },
-    hr: { label: "HR TEAM", title: "Standardize agreements without slowing people down.", text: "Use approved templates and repeatable workflows for employment and people-related agreements.", list: ["Controlled HR templates", "Confidential role-based access", "Fast internal review and signature"] },
+    legal: { label: "LEGAL TEAM", title: "Reduce contract risk without slowing the business.", text: "Keep clauses, reviews and approvals controlled while business teams move faster.", list: ["Approved templates and clause control", "Clear internal and external collaboration", "Complete version history and audit trail"] },
+    management: { label: "MANAGEMENT", title: "See exposure, ownership and bottlenecks in one view.", text: "Get decision-ready visibility across the portfolio without chasing status updates.", list: ["Live status across the portfolio", "Clear ownership and bottleneck visibility", "Decision-ready analytics and reporting"] },
+    procurement: { label: "PROCUREMENT", title: "Stay ahead of vendor terms, renewals and obligations.", text: "Keep supplier agreements moving and prevent valuable terms or deadlines from slipping through the cracks.", list: ["Structured supplier workflows", "Faster cross-team approvals", "Renewal and obligation tracking"] },
+    finance: { label: "FINANCE", title: "Understand financial commitments before you approve.", text: "See commercial terms, payment obligations and approval history in one controlled process.", list: ["Clear approval requests", "Payment term visibility", "Upcoming obligation reminders"] },
+    hr: { label: "HR TEAM", title: "Standardize agreements while protecting sensitive data.", text: "Move employment agreements faster with approved templates, controlled access and clear signatures.", list: ["Controlled HR templates", "Confidential role-based access", "Fast internal review and signature"] },
   },
   ka: {
-    legal: { label: "იურიდიული გუნდი", title: "წაიყვანეთ პროცესი წინ კონტროლის დაკარგვის გარეშე.", text: "გააერთიანეთ დოკუმენტის შექმნა და განხილვა და ყველა ვერსია, კომენტარი და დამტკიცება ერთმანეთთან დააკავშირეთ.", list: ["დამტკიცებული შაბლონები და პირობების კონტროლი", "გამართული შიდა და გარე თანამშრომლობა", "ვერსიებისა და მოქმედებების სრული ისტორია"] },
-    management: { label: "მენეჯმენტი", title: "მიიღეთ გადაწყვეტილებები სრული სურათის საფუძველზე.", text: "დაინახეთ ხელშეკრულებების სტატუსი, ბიზნესრისკები და მომლოდინე გადაწყვეტილებები დამატებითი ინფორმაციის მოთხოვნის გარეშე.", list: ["პორტფელის მიმდინარე სტატუსი", "პასუხისმგებლობებისა და შეფერხებების ხილვადობა", "გადაწყვეტილებისთვის მზა ანალიტიკა"] },
-    procurement: { label: "შესყიდვები", title: "მართეთ მომწოდებლის ყველა ხელშეკრულება დროულად.", text: "კოორდინაცია გაუწიეთ მოლაპარაკებას, დამტკიცებასა და განახლებას ერთიანი მომწოდებლის ჩანაწერით.", list: ["სტრუქტურირებული მომწოდებლის პროცესები", "უფრო სწრაფი შიდა დამტკიცება", "განახლებისა და ვალდებულებების კონტროლი"] },
-    finance: { label: "ფინანსები", title: "დამტკიცებამდე იცოდეთ ფინანსური გავლენა.", text: "ერთ პროცესში განიხილეთ კომერციული პირობები, გადახდის ვალდებულებები და მოთხოვნილი თანხმობები.", list: ["მკაფიო დამტკიცების მოთხოვნები", "გადახდის პირობების ხილვადობა", "მომავალი ვალდებულებების შეხსენება"] },
-    hr: { label: "HR გუნდი", title: "დაასტანდარტეთ შეთანხმებები პროცესის შენელების გარეშე.", text: "გამოიყენეთ დამტკიცებული შაბლონები და განმეორებადი პროცესები დასაქმებისა და HR შეთანხმებებისთვის.", list: ["კონტროლირებადი HR შაბლონები", "კონფიდენციალური როლებზე დაფუძნებული წვდომა", "სწრაფი განხილვა და ხელმოწერა"] },
+    legal: { label: "იურიდიული გუნდი", title: "შეამცირეთ სახელშეკრულებო რისკი ბიზნესის შენელების გარეშე.", text: "აკონტროლეთ პირობები, განხილვები და დამტკიცებები, სანამ ბიზნესგუნდები უფრო სწრაფად მუშაობენ.", list: ["დამტკიცებული შაბლონები და პირობების კონტროლი", "გამართული შიდა და გარე თანამშრომლობა", "ვერსიებისა და მოქმედებების სრული ისტორია"] },
+    management: { label: "მენეჯმენტი", title: "ერთ ხედში დაინახეთ რისკი, პასუხისმგებელი და შეფერხება.", text: "მიიღეთ გადაწყვეტილებისთვის მზა სურათი მთელი პორტფელის შესახებ სტატუსების დევნის გარეშე.", list: ["პორტფელის მიმდინარე სტატუსი", "პასუხისმგებლობებისა და შეფერხებების ხილვადობა", "გადაწყვეტილებისთვის მზა ანალიტიკა"] },
+    procurement: { label: "შესყიდვები", title: "წინასწარ აკონტროლეთ მომწოდებლის პირობები და განახლებები.", text: "წაიყვანეთ მომწოდებლის ხელშეკრულებები წინ და არ დაკარგოთ მნიშვნელოვანი პირობა, ვადა ან ვალდებულება.", list: ["სტრუქტურირებული მომწოდებლის პროცესები", "უფრო სწრაფი შიდა დამტკიცება", "განახლებისა და ვალდებულებების კონტროლი"] },
+    finance: { label: "ფინანსები", title: "დამტკიცებამდე გაიგეთ ყველა ფინანსური ვალდებულება.", text: "ერთ კონტროლირებად პროცესში ნახეთ კომერციული პირობები, გადახდები და დამტკიცების ისტორია.", list: ["მკაფიო დამტკიცების მოთხოვნები", "გადახდის პირობების ხილვადობა", "მომავალი ვალდებულებების შეხსენება"] },
+    hr: { label: "HR გუნდი", title: "დაასტანდარტეთ შეთანხმებები და დაიცავით სენსიტიური მონაცემები.", text: "უფრო სწრაფად მართეთ შრომითი შეთანხმებები დამტკიცებული შაბლონებით, კონტროლირებადი წვდომითა და მკაფიო ხელმოწერებით.", list: ["კონტროლირებადი HR შაბლონები", "კონფიდენციალური როლებზე დაფუძნებული წვდომა", "სწრაფი განხილვა და ხელმოწერა"] },
   },
 };
 
@@ -347,6 +375,56 @@ document.querySelectorAll(".nav-panel a").forEach((link) => link.addEventListene
   menuButton.setAttribute("aria-expanded", "false");
   navPanel.classList.remove("open");
 }));
+
+const productTour = document.querySelector("[data-tour]");
+const tourSteps = [...document.querySelectorAll("[data-tour-step]")];
+const tourSlides = [...document.querySelectorAll("[data-tour-slide]")];
+const tourPrevious = document.querySelector("[data-tour-prev]");
+const tourNext = document.querySelector("[data-tour-next]");
+const tourCurrent = document.querySelector("[data-tour-current]");
+let activeTourStep = 0;
+let tourTrigger = null;
+
+function setTourStep(nextStep) {
+  activeTourStep = Math.max(0, Math.min(tourSlides.length - 1, nextStep));
+  tourSteps.forEach((step, index) => {
+    const isActive = index === activeTourStep;
+    step.classList.toggle("active", isActive);
+    step.setAttribute("aria-selected", String(isActive));
+  });
+  tourSlides.forEach((slide, index) => slide.classList.toggle("active", index === activeTourStep));
+  tourCurrent.textContent = String(activeTourStep + 1);
+  tourPrevious.disabled = activeTourStep === 0;
+  tourNext.disabled = activeTourStep === tourSlides.length - 1;
+}
+
+function openTour(trigger) {
+  tourTrigger = trigger;
+  setTourStep(0);
+  productTour.classList.add("open");
+  productTour.setAttribute("aria-hidden", "false");
+  document.body.classList.add("tour-open");
+  productTour.querySelector(".tour-close").focus();
+}
+
+function closeTour() {
+  productTour.classList.remove("open");
+  productTour.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("tour-open");
+  tourTrigger?.focus();
+}
+
+document.querySelectorAll("[data-tour-open]").forEach((button) => button.addEventListener("click", () => openTour(button)));
+document.querySelectorAll("[data-tour-close]").forEach((button) => button.addEventListener("click", closeTour));
+tourSteps.forEach((button) => button.addEventListener("click", () => setTourStep(Number(button.dataset.tourStep))));
+tourPrevious.addEventListener("click", () => setTourStep(activeTourStep - 1));
+tourNext.addEventListener("click", () => setTourStep(activeTourStep + 1));
+document.addEventListener("keydown", (event) => {
+  if (!productTour.classList.contains("open")) return;
+  if (event.key === "Escape") closeTour();
+  if (event.key === "ArrowLeft") setTourStep(activeTourStep - 1);
+  if (event.key === "ArrowRight") setTourStep(activeTourStep + 1);
+});
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries) => {
